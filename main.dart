@@ -18,7 +18,10 @@ class TutorialHome extends StatelessWidget {
             Container(
               height: 300,
               width: 600,
-              decoration: BoxDecoration(color: Colors.redAccent),
+              decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
+              ),
             ),
             Column(
               children: [
@@ -26,7 +29,7 @@ class TutorialHome extends StatelessWidget {
                   padding:
                       const EdgeInsets.only(top: 15.0, left: 15, right: 15),
                   child: Container(
-                      height: 668.4,
+                      height: MediaQuery.of(context).size.height -15,
                       width: 450,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
@@ -59,12 +62,14 @@ class TutorialHome extends StatelessWidget {
                       color: const Color(0xFFEFEEED)
                   ),
                   child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 60.0,right: 70),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            hintText: "Email or Phone number",
-                            hintStyle: TextStyle(color: Colors.black)),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              hintText: "Email or Phone number",
+                              hintStyle: TextStyle(color: Colors.black)),
+                        ),
                       ),
                     ),
                   ),
@@ -82,22 +87,23 @@ class TutorialHome extends StatelessWidget {
                       color: const Color(0xFFEFEEED)
                   ),
                   child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 100.0,right: 120),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            hintText: "Password",
-                            hintStyle: TextStyle(color: Colors.black)),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              hintText: "Password",
+                              hintStyle: TextStyle(color: Colors.black)),
+                        ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
-                  child: Row(
+                  child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 38.0),
+                      Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -110,7 +116,7 @@ class TutorialHome extends StatelessWidget {
                                     children: [
                                       Container(
                                         height: 50,
-                                        width: 100,
+                                        width: 200,
                                         padding: EdgeInsets.symmetric(
                                             vertical: 12, horizontal: 12),
                                         child: Center(
@@ -139,7 +145,7 @@ class TutorialHome extends StatelessWidget {
                                       )
                                     ],
                                   ),
-                                  width: 150,
+                                  width: 250,
                                   decoration: BoxDecoration(
                                     color: Colors.redAccent,
                                     boxShadow: [
@@ -159,19 +165,22 @@ class TutorialHome extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(width: 10.0),
+                      SizedBox(width: 20.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text("OR",
-                              style: TextStyle(
-                                  color: Colors.white70,
-                                  fontWeight: FontWeight.w600,
-                                  letterSpacing: 0.3)),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("OR",
+                                style: TextStyle(
+                                    color: Colors.white70,
+                                    fontWeight: FontWeight.w600,
+                                    letterSpacing: 0.3)),
+                          ),
                         ],
                       ),
-                      SizedBox(width: 10.0),
+                      SizedBox(width: 20.0),
                       SizedBox(
                         height: 50,
                         child: InkWell(
@@ -182,7 +191,7 @@ class TutorialHome extends StatelessWidget {
                               children: [
                                 Container(
                                   height: 50,
-                                  width: 100,
+                                  width: 200,
                                   padding: EdgeInsets.symmetric(
                                       vertical: 12, horizontal: 12),
                                   child: Center(
@@ -204,13 +213,13 @@ class TutorialHome extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 14.0),
                                   child: Icon(
-                                    Icons.add,
+                                    Ionicons.logo_facebook,
                                     size: 30,
                                   ),
                                 )
                               ],
                             ),
-                            width: 150,
+                            width: 250,
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
                               boxShadow: [
@@ -231,7 +240,9 @@ class TutorialHome extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+
+
           ],
         ));
   }
