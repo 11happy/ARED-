@@ -20,14 +20,14 @@ class TutorialHome extends StatelessWidget {
               width: 600,
               decoration: BoxDecoration(
                   color: Colors.redAccent,
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
               ),
             ),
             Column(
               children: [
                 Padding(
                   padding:
-                      const EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                  const EdgeInsets.only(top: 15.0, left: 15, right: 15),
                   child: Container(
                       height: MediaQuery.of(context).size.height -15,
                       width: 450,
@@ -48,8 +48,8 @@ class TutorialHome extends StatelessWidget {
                     width: 300,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage("assets/rem.png"),
-                    )),
+                          image: AssetImage("assets/rem.png"),
+                        )),
                   ),
                 ),
                 Container(
@@ -57,8 +57,8 @@ class TutorialHome extends StatelessWidget {
                   width: 300,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(
-                        Radius.circular(5)
-                          ),
+                          Radius.circular(5)
+                      ),
                       color: const Color(0xFFEFEEED)
                   ),
                   child: Center(
@@ -67,7 +67,7 @@ class TutorialHome extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: InputDecoration(
-                              hintText: "Email or Phone number",
+                              hintText: "email or phone number",
                               hintStyle: TextStyle(color: Colors.black)),
                         ),
                       ),
@@ -92,7 +92,7 @@ class TutorialHome extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: InputDecoration(
-                              hintText: "Password",
+                              hintText: "password",
                               hintStyle: TextStyle(color: Colors.black)),
                         ),
                       ),
@@ -109,7 +109,7 @@ class TutorialHome extends StatelessWidget {
                           children: [
                             Center(
                               child: InkWell(
-                                splashColor: Colors.white,
+                                splashColor: Colors.blueAccent,
                                 onTap: () {},
                                 child: new Container(
                                   child: Row(
@@ -121,14 +121,15 @@ class TutorialHome extends StatelessWidget {
                                             vertical: 12, horizontal: 12),
                                         child: Center(
                                           child: Text(
-                                            'Google',
+                                            'sign in with Google',
                                             style: TextStyle(
                                                 fontSize: 17,
-                                                fontWeight: FontWeight.w500),
+                                                fontWeight: FontWeight.w500,
+                                            color:Colors.white),
                                           ),
                                         ),
                                         decoration: BoxDecoration(
-                                            color: Colors.white,
+                                            color: Colors.blueAccent,
                                             borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(5),
                                               topLeft: Radius.circular(5),
@@ -137,20 +138,21 @@ class TutorialHome extends StatelessWidget {
                                       ),
                                       Padding(
                                         padding:
-                                            const EdgeInsets.only(left: 14.0),
+                                        const EdgeInsets.only(left: 14.0),
                                         child: Icon(
                                           Ionicons.logo_google,
                                           size: 28,
+                                          color: Colors.orange,
                                         ),
                                       )
                                     ],
                                   ),
                                   width: 250,
                                   decoration: BoxDecoration(
-                                    color: Colors.redAccent,
+                                    color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.black45,
+                                        color: Colors.blueAccent,
                                         blurRadius: 2.0,
                                         spreadRadius: 0.0,
                                         offset: Offset(2.0,
@@ -180,11 +182,11 @@ class TutorialHome extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(width: 20.0),
+                      SizedBox(width: 30.0),
                       SizedBox(
                         height: 50,
                         child: InkWell(
-                          splashColor: Colors.white,
+                          splashColor: Colors.blueAccent,
                           onTap: () {},
                           child: new Container(
                             child: Row(
@@ -196,14 +198,15 @@ class TutorialHome extends StatelessWidget {
                                       vertical: 12, horizontal: 12),
                                   child: Center(
                                     child: Text(
-                                      'Facebook',
+                                      'continue with Facebook',
                                       style: TextStyle(
-                                          fontSize: 17,
-                                          fontWeight: FontWeight.w500),
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500,
+                                      color:Colors.white),
                                     ),
                                   ),
                                   decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: Colors.blueAccent,
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(5),
                                         topLeft: Radius.circular(5),
@@ -215,16 +218,17 @@ class TutorialHome extends StatelessWidget {
                                   child: Icon(
                                     Ionicons.logo_facebook,
                                     size: 30,
+                                    color: Colors.blueAccent,
                                   ),
                                 )
                               ],
                             ),
                             width: 250,
                             decoration: BoxDecoration(
-                              color: Colors.redAccent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black45,
+                                  color: Colors.blueAccent,
                                   blurRadius: 2.0,
                                   spreadRadius: 0.0,
                                   offset: Offset(2.0,
